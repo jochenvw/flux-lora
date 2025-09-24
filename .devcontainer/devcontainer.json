@@ -16,8 +16,10 @@
 	// 3. Use 'runArgs' to pass arguments to the container. 
 	// run the container with all GPUs
 	"runArgs": [
-		"--gpus",
-		"all"
+		"--gpus=all",          // Expose RTX 4090 to container
+		"--shm-size=16g",      // Prevent PyTorch DataLoader crashes
+		"--memory=48g",        // Limit container to 48 GB RAM (safe headroom)
+		"--cpus=16"            // Use all 16 cores
 	],
 
 	// 4. Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
