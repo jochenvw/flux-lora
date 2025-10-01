@@ -34,4 +34,4 @@ Old style | Stable Diffusion | Flux
 Running inside DevContainer gave me lots of headaches.
 - First off: perf - especially IO perf - is an issue. Huggingface models are big, if you pull those down - it's significantly slower on Windows>WSL2>DevContainer then straight onto Windows.
 - Second: lots of GPU strange things. Out-of-Memory CUDA things. On windows as well, but a lot more in the Linux container. 
-- Use Python 3.12 or 3.11 - some depenedencies didn't like the 3.12.
+- Use Python 3.12 or 3.11 - some depenedencies didn't like the v3.13.
