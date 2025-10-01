@@ -25,4 +25,4 @@ Trained on my local RTX4090 GPU.
 ## Side-by-side
 
 Old style|Stable Diffusion|Flux
-![](work\converted\old\courgettebroodjes.jpg)  |  ![](work\outputs\courgettebroodjes_newstyle.jpg) | ![](flux_lora\courgettebroodjes.png)
+![](./work/converted/old/courgettebroodjes.jpg)  |  ![](./work/outputs/courgettebroodjes_newstyle.jpg) | ![](flux_lora/courgettebroodjes.png)
