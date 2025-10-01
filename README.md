@@ -26,3 +26,12 @@ Trained on my local RTX4090 GPU.
 Old style | Stable Diffusion | Flux
 :---:|:---:|:---:
 <img src="./work/converted/old/courgettebroodjes.jpg" width="100"/> | <img src="./work/outputs/courgettebroodjes_newstyle.jpg" width="100"/> | <img src="flux_lora/courgettebroodjes.png" width="100"/>
+
+
+
+### Some learnings
+
+Running inside DevContainer gave me lots of headaches.
+- First off: perf - especially IO perf - is an issue. Huggingface models are big, if you pull those down - it's significantly slower on Windows>WSL2>DevContainer then straight onto Windows.
+- Second: lots of GPU strange things. Out-of-Memory CUDA things. On windows as well, but a lot more in the Linux container. 
+- Use Python 3.12 or 3.11 - some depenedencies didn't like the 3.12.
